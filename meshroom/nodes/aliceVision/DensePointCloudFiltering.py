@@ -15,15 +15,15 @@ TODO
     inputs = [
         desc.File(
             name='inputMesh',
-            label='Mesh',
+            label='Input Mesh',
             description='''Input Mesh (OBJ file format).''',
             value='',
             uid=[0],
         ),
 
         desc.File(
-            name="output",
-            label="Dense SfMData RAW",
+            name="inputRawSfm",
+            label="Raw Dense Point Cloud",
             description="Output dense point cloud with visibilities (SfMData file format).",
             value="{cache}/{nodeType}/{uid0}/densePointCloud_raw.abc",
             uid=[],
@@ -34,7 +34,7 @@ TODO
     outputs = [
         desc.File(
             name="outputMesh",
-            label="Mesh",
+            label="Output Mesh",
             description="Output mesh (OBJ file format).",
             value="{cache}/{nodeType}/{uid0}/mesh.obj",
             uid=[],
