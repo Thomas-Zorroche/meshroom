@@ -28,6 +28,24 @@ TODO
             value="{cache}/{nodeType}/{uid0}/densePointCloud_raw.abc",
             uid=[],
         ),
+
+        desc.FloatParam(
+            name='radiusFactor',
+            label='radiusFactor',
+            description='radiusFactor',
+            value=1.0,
+            range=(0.0, 10.0, 0.1),
+            uid=[0],
+        ),
+
+        desc.FloatParam(
+            name='filterStrength',
+            label='Filter Strength',
+            description='Filter Strength',
+            value=1.0,
+            range=(0.0, 10.0, 0.1),
+            uid=[0],
+        ),
     ]
 
 
