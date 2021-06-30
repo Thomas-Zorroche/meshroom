@@ -46,6 +46,15 @@ TODO
             range=(0.0, 10.0, 0.1),
             uid=[0],
         ),
+
+        desc.FloatParam(
+            name='epsilonRadius',
+            label='Epsilon Radius',
+            description='Epsilon Radius',
+            value=1.0,
+            range=(0.0, 10.0, 0.1),
+            uid=[0],
+        ),
     ]
 
 
