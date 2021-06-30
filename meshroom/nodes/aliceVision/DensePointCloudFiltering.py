@@ -55,6 +55,15 @@ TODO
             range=(0.0, 10.0, 0.1),
             uid=[0],
         ),
+
+        desc.IntParam(
+            name='iterations',
+            label='iterations',
+            description='iterations',
+            value=1,
+            range=(0, 20, 1),
+            uid=[0],
+        ),
     ]
 
 
