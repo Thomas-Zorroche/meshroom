@@ -34,7 +34,7 @@ TODO
             label='radiusFactor',
             description='radiusFactor',
             value=1.0,
-            range=(0.0, 10.0, 0.1),
+            range=(0.0, 2.0, 0.01),
             uid=[0],
         ),
 
@@ -42,7 +42,7 @@ TODO
             name='filterStrength',
             label='Filter Strength',
             description='Filter Strength',
-            value=1.0,
+            value=0.2,
             range=(0.0, 10.0, 0.1),
             uid=[0],
         ),
@@ -51,7 +51,7 @@ TODO
             name='epsilonRadius',
             label='Epsilon Radius',
             description='Epsilon Radius',
-            value=1.0,
+            value=0.0,
             range=(0.0, 10.0, 0.1),
             uid=[0],
         ),
@@ -73,6 +73,14 @@ TODO
             label="Output Mesh",
             description="Output mesh (OBJ file format).",
             value="{cache}/{nodeType}/{uid0}/mesh.obj",
+            uid=[],
+        ),
+
+        desc.File(
+            name="outputDensePointCloud",
+            label="outputDensePointCloud",
+            description="outputDensePointCloud",
+            value="{cache}/{nodeType}/{uid0}/densePointCloud.abc",
             uid=[],
         ),
     ]
