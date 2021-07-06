@@ -33,7 +33,7 @@ TODO
             name='radiusFactor',
             label='radiusFactor',
             description='radiusFactor',
-            value=0.004,
+            value=1.0,
             range=(0.0, 2.0, 0.01),
             uid=[0],
         ),
@@ -47,12 +47,12 @@ TODO
             uid=[0],
         ),
 
-        desc.FloatParam(
-            name='epsilonRadius',
-            label='Epsilon Radius',
-            description='Epsilon Radius',
-            value=0.0,
-            range=(0.0, 10.0, 0.1),
+        desc.IntParam(
+            name='nMatchesMax',
+            label='nMatchesMax',
+            description='nMatchesMax',
+            value=50,
+            range=(0, 200, 1),
             uid=[0],
         ),
 
