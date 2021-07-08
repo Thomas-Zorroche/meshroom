@@ -51,8 +51,17 @@ TODO
             name='nMatchesMax',
             label='nMatchesMax',
             description='nMatchesMax',
-            value=50,
+            value=25,
             range=(0, 200, 1),
+            uid=[0],
+        ),
+
+        desc.IntParam(
+            name='nMatchesLimit',
+            label='nMatchesLimit',
+            description='nMatchesLimit',
+            value=50,
+            range=(0, 2500, 10),
             uid=[0],
         ),
 
