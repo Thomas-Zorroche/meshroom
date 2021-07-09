@@ -48,18 +48,18 @@ TODO
         ),
 
         desc.IntParam(
-            name='nMatchesMax',
-            label='nMatchesMax',
-            description='nMatchesMax',
+            name='nPointsMax',
+            label='nPointsMax',
+            description='nPointsMax',
             value=25,
             range=(0, 200, 1),
             uid=[0],
         ),
 
         desc.IntParam(
-            name='nMatchesLimit',
-            label='nMatchesLimit',
-            description='nMatchesLimit',
+            name='nNeighborsMax',
+            label='nNeighborsMax',
+            description='nNeighborsMax',
             value=50,
             range=(0, 2500, 10),
             uid=[0],
